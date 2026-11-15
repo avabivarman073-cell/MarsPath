@@ -1,0 +1,6 @@
+.mission-stage-nav{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0 25px;padding:8px 0}
+.mission-stage-pill{padding:9px 15px;border:1px solid #4f6b72;border-radius:99px;color:#b7cbd0;background:#10313a;font-size:.9rem;font-weight:650}
+.mission-stage-pill.current{background:#e8d0a5;color:#0a282f;border-color:#e8d0a5}
+.mission-stage-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:24px 0}
+.mission-stage-actions .btn{min-height:46px;padding:11px 18px}
+@media(max-width:600px){.mission-stage-pill{font-size:.76rem;padding:7px 9px}.mission-stage-actions{flex-direction:column;align-items:stretch}.mission-stage-actions>*{width:100%}}

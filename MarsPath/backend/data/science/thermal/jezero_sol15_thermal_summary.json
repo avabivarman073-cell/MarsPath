@@ -1,0 +1,41 @@
+{
+  "source": "NASA PDS Mars 2020 MEDA derived TIRS P04 and calibrated ATS P01",
+  "sol": 15,
+  "period_utc": {
+    "start": "2021-03-05T14:18:05.298Z",
+    "end": "2021-03-06T13:59:22.970Z"
+  },
+  "tirs_total_records": 26076,
+  "tirs_filtered_records": 25886,
+  "tirs_filter": {
+    "TIRS_GROUND_FOOTPRINT_NOT_IN_SHADOW": 1,
+    "ROVER_LOW_TILT": 1,
+    "ROVER_STILL": 1
+  },
+  "tirs_fields": {
+    "UPWARD_LW_IRRADIANCE": {
+      "unit": "W/m2",
+      "stats": {
+        "n": 25886,
+        "min": 86.57,
+        "max": 322.79,
+        "mean": 184.58
+      }
+    },
+    "DOWNWARD_LW_IRRADIANCE": {
+      "unit": "W/m2",
+      "stats": {
+        "n": 25886,
+        "min": 21.92,
+        "max": 39.33,
+        "mean": 32.64
+      }
+    }
+  },
+  "flags_note": "RSM head outside upward FOV flag is 0 for all rows; wheel outside downward FOV flag missing for all rows. Results are exploratory and require instrument-specific interpretation and further QC.",
+  "ground_temperature_c": null,
+  "ground_temperature_note": "Not directly available in the supplied derived TIRS CSV; irradiance must not be labeled as ground temperature. Conversion requires an appropriate radiative transfer/emissivity calibration model.",
+  "ats_reference": "NASA calibrated ATS Sol 15 P01, five independent local air temperature sensors",
+  "spatial_scope": "Observations at the rover, not a temperature map for the 2 km x 2 km area",
+  "hourly_method": "Arithmetic mean per LMST integer hour where available; TIRS filtered for unshadowed, low tilt, still rover; ATS five-sensor average per record. No time interpolation."
+}

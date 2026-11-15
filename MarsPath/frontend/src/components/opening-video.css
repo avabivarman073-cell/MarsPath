@@ -1,0 +1,21 @@
+/* Full-viewport intro, with exactly two buttons and no inner scroll. */
+.marspath-opening{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:clamp(6px,1.5vh,14px);box-sizing:border-box;overflow:hidden;background:#071923;color:#f7f4ea}
+.marspath-opening.embedded{position:fixed;inset:0;z-index:1000}
+.marspath-opening-card{width:min(1120px,100%);height:100%;max-height:min(820px,100%);min-height:0;box-sizing:border-box;border:1px solid #52717c;background:#0b1624;border-radius:18px;padding:clamp(10px,2vh,20px);display:flex;flex-direction:column;gap:clamp(8px,1.4vh,14px);overflow:hidden;box-shadow:0 18px 50px #0008}
+.marspath-opening-heading{flex:0 0 auto;min-height:0;display:flex;align-items:center}
+.marspath-opening-heading h2{font-size:clamp(1.25rem,3vw,2.15rem);line-height:1.15;color:#fff;margin:0}
+.marspath-opening-player{flex:1 1 auto;min-height:0;max-height:100%;width:100%;border-radius:10px;overflow:hidden;background:#000;display:flex;align-items:center;justify-content:center}
+.marspath-opening-player video{display:block;width:100%;height:100%;object-fit:contain;background:#000}
+.marspath-opening-error{padding:20px;text-align:center;color:#ebcfa0}
+.marspath-opening-actions{flex:0 0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,1.6vw,16px)}
+.marspath-opening-actions button{min-height:clamp(38px,7vh,52px);font-family:inherit;font-weight:700;font-size:clamp(.78rem,1.6vw,1rem);line-height:1.2;padding:8px 12px;border-radius:10px;cursor:pointer}
+.marspath-start{background:#eacb9c;border:2px solid #f7dfa9;color:#102935}
+.marspath-skip{background:#193a48;border:1px solid #aac2c8;color:#fff}
+.marspath-opening-actions button:focus-visible{outline:3px solid #fff3be;outline-offset:2px}
+@media(max-width:600px){.marspath-opening{padding:5px}.marspath-opening-card{padding:8px;border-radius:12px}.marspath-opening-actions{gap:6px}.marspath-opening-actions button{padding:6px;font-size:.75rem}}
+@media(max-height:510px){.marspath-opening-card{padding:6px;gap:5px}.marspath-opening-heading h2{font-size:1.1rem}.marspath-opening-actions button{min-height:32px}}
+
+/* Audio activation is a click on the video itself, not a third action button. */
+.marspath-opening-player{position:relative}
+.marspath-audio-hint{position:absolute;left:50%;bottom:48px;transform:translateX(-50%);padding:8px 14px;border-radius:100px;background:#0b2334e8;color:#fff;font-size:clamp(.78rem,1.3vw,.92rem);font-weight:700;pointer-events:none;white-space:nowrap;box-shadow:0 4px 18px #0008}
+@media(max-height:560px){.marspath-audio-hint{bottom:36px;padding:4px 9px}}
