@@ -21,9 +21,10 @@ type Props = {
   scienceMinutes: number;
 };
 
-const ROUTE_ADVICE: Record<RouteKind, string> = {
+
+const ROUTE_ADVICE: Record<string, string> = {
   shortest: 'Choose this when walking distance matters most. It may cross more higher-cost cells.',
-  lower: 'Choose this when avoiding the model\u2019s higher-cost cells matters more, even if the walk is longer.',
+  lower: 'Choose this when avoiding the model’s higher-cost cells matters more, even if the walk is longer.',
   balanced: 'A slope-aware illustrative objective using supplied DEM-derived slope values; not a verified safety score.',
 };
 
